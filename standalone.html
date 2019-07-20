@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <!-- Example of using Caman through a browser script tag -->
+    <meta charset="UTF-8">
+  <head>
+    <title>Getting Started</title>
+    <!-- Either include the full CamanJS code including plugins -->
+    <script type="text/javascript" src="vendor/caman/dist/caman.js"></script>
+  </head>
+  <body>
+    <h1>Caman Test Page</h1>
+    <div>
+        <p>Original Image</p>
+        <img src="profile.JPG" />    
+    </div>
+    <div>
+        <p>Caman Image</p>
+        <canvas id="canvas-id"></canvas>
+    </div>
+    <script>
+      Caman("#canvas-id", "profile.JPG", function () {
+      // manipulate image here
+      this.brightness(50).render();
+      // Change the opacity of this layer
+      });
+    </script>
+  </body>
+</html>
