@@ -47,7 +47,7 @@ module.exports = {
       ],    
   },
   plugins: [
-    new HtmlWebpackPlugin({
+    new HtmlWebpackPluginNotExisting({
         template: 'src/index.html'
     }),
     new CopyPlugin([
